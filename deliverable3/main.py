@@ -4,7 +4,7 @@ import time
 import streamlit as st
 from dotenv import load_dotenv
 from anthropic import Anthropic
-from scorer import score_url
+from credibility.scorer import score_url
 
 # ---------------------------------------------------------------------------
 # Streamlit app entrypoint for Deliverable 3.

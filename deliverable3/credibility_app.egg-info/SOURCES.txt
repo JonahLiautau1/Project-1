@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+credibility/__init__.py
+credibility/scorer.py
+credibility_app.egg-info/PKG-INFO
+credibility_app.egg-info/SOURCES.txt
+credibility_app.egg-info/dependency_links.txt
+credibility_app.egg-info/requires.txt
+credibility_app.egg-info/top_level.txt
