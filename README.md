@@ -1,0 +1,38 @@
+
+# Deliverable 3 — Streamlit Credibility App (UV)
+
+This app satisfies the D3 requirements:
+- Streamlit UI
+- UV package manager
+- Integrates Deliverable 1 scoring function
+- Optional Anthropic Claude chatbot tab
+- Local deployment & testing
+
+## 🚀 Quickstart (local)
+
+```bash
+# from repo root:
+cd credibility_app
+
+# install (creates env, resolves deps)
+uv sync
+
+# set API key (optional for chatbot)
+cp .env.example .env
+# then edit .env and set ANTHROPIC_API_KEY=<your_key>
+
+# run
+uv run streamlit run main.py
+```
+Open http://localhost:8501
+
+## 📂 Files
+- `main.py` — Streamlit UI, two tabs (URL Scorer, Chatbot)
+- `scorer.py` — Heuristic URL credibility scorer (from D1; simplified here)
+- `.env.example` — Template for secrets (Anthropic key)
+- `pyproject.toml` — uv-managed dependencies & metadata
+- `README.md` — This file
+
+## 🧪 Notes
+- The chatbot tab is optional. If no key is set, the UI will display an info message.
+- Replace/extend `scorer.py` with your full Deliverable 1 logic if needed.
