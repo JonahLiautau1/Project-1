@@ -1,0 +1,21 @@
+
+[project]
+name = "credibility_app"
+version = "0.1.0"
+description = "Streamlit app for URL credibility scoring + optional Anthropic chatbot (Deliverable 3)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit",
+    "requests",
+    "tldextract",
+    "python-dotenv",
+    "anthropic",
+]
+
+[tool.uv]
+# uv will manage the environment and lockfile for reproducibility.
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
